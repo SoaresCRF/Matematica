@@ -84,3 +84,50 @@ function fatorar()
     <?php } ?>
 
 <?php } ?>
+
+
+<?php
+
+function validar_cpf()
+{
+
+    //CPF Sem modificações para echo
+    $cpf_ori = trim($_POST['cpf']);
+
+
+    // Extrai somente os números
+    $cpf = preg_replace('/[^0-9]/', "", trim($_POST['cpf']));
+
+
+    // Verifica se foi informado onze dígitos e se foi informada uma sequência de dígitos repetidos. Ex: 111.111.111-11
+    if (strlen($cpf) != 11 || preg_match('/([0-9])\1{10}/', $cpf)) { ?>
+        <span>O CPF "<?php echo $cpf_ori; ?>" informado é inválido</span>
+        <?php return false; ?>
+    <?php  } ?>
+
+    <?php
+    // Faz o calculo para validar o CPF
+    $number_quantity_to_loop = [9, 10];
+
+    foreach ($number_quantity_to_loop as $item) {
+
+        $sum = 0;
+        $number_to_multiplicate = $item + 1;
+
+        for ($index = 0; $index < $item; $index++) {
+
+            $sum += $cpf[$index] * ($number_to_multiplicate--);
+        }
+
+        $result = (($sum * 10) % 11);
+
+        if ($cpf[$item] != $result) { ?>
+            <span>O CPF "<?php echo $cpf_ori; ?>" informado é inválido</span>
+            <?php return false; ?>
+    <?php
+        }
+    }
+    ?>
+    <span>O CPF "<?php echo $cpf_ori; ?>" informado é válido</span>
+    <?php return true; ?>
+<?php  } ?>

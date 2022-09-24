@@ -1,6 +1,6 @@
 <?php
 include("../view/header.php");
-include("funcoes.php");
+include("../funcoes/funcoes.php");
 ?>
 
 <div class="medium-9 columns" id="wrapper-content">
