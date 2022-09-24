@@ -50,17 +50,21 @@
                 <ul class="left" role="menu" id="top-nav">
                     <li class="sidebar-title"><a href="index.php">Matemática</a></li>
                     <li class="heading">Calculadoras</li>
-                    <li role="menuitem" class=""><a href="./calculadoras/equacao_segundo_grau.php" title="Calcular equação do segundo grau">Calcular equação do segundo grau</a><i></i></li>
-                    <li role="menuitem" class=""><a href="./calculadoras/fatorar.php" title="Calculadora de Fatoração de Número">Fatorar Número</a><i></i></li>
+                    <li role="menuitem" class=""><a href="../calculadoras/equacao_segundo_grau.php" title="Calcular equação do segundo grau">Calcular equação do segundo grau</a><i></i></li>
+                    <li role="menuitem" class=""><a href="../calculadoras/fatorar.php" title="Calculadora de Fatoração de Número">Fatorar Número</a><i></i></li>
 
 
                     <li class="heading">Calcular Áreas</li>
-                    <li role="menuitem" class=""><a href="./calcular_areas/area_quadrado.php" title="Calculadora da Área do Quadrado">Área do Quadrado</a><i></i></li>
-                    <li role="menuitem" class=""><a href="./calcular_areas/area_retangulo.php" title="Calculadora da Área do Retângulo">Área do Retângulo</a><i></i></li>
-                    <li role="menuitem" class=""><a href="./calcular_areas/area_triangulo.php" title="Calculadora da Área do Triângulo">Área do Triângulo</a><i></i></li>
-                    <li role="menuitem" class=""><a href="./calcular_areas/area_pentagono.php" title="Calculadora da Área do Pentágono">Área do Pentágono</a><i></i></li>
-                    <li role="menuitem" class=""><a href="./calcular_areas/area_hexagono.php" title="Calculadora da Área do Hexágono">Área do Hexágono</a><i></i></li>
-                    <li role="menuitem" class=""><a href="./calcular_areas/area_losango.php" title="Calculadora da Área do Losango">Área do Losango</a><i></i></li>
-                    <li role="menuitem" class=""><a href="./calcular_areas/area_trapezio.php" title="Calculadora da Área do Trapézio">Área do Trapézio</a><i></i></li>
+                    <li role="menuitem" class=""><a href="../calcular_areas/area_quadrado.php" title="Calculadora da Área do Quadrado">Área do Quadrado</a><i></i></li>
+                    <li role="menuitem" class=""><a href="../calcular_areas/area_retangulo.php" title="Calculadora da Área do Retângulo">Área do Retângulo</a><i></i></li>
+                    <li role="menuitem" class=""><a href="../calcular_areas/area_triangulo.php" title="Calculadora da Área do Triângulo">Área do Triângulo</a><i></i></li>
+                    <li role="menuitem" class=""><a href="../calcular_areas/area_pentagono.php" title="Calculadora da Área do Pentágono">Área do Pentágono</a><i></i></li>
+                    <li role="menuitem" class=""><a href="../calcular_areas/area_hexagono.php" title="Calculadora da Área do Hexágono">Área do Hexágono</a><i></i></li>
+                    <li role="menuitem" class=""><a href="../calcular_areas/area_losango.php" title="Calculadora da Área do Losango">Área do Losango</a><i></i></li>
+                    <li role="menuitem" class=""><a href="../calcular_areas/area_trapezio.php" title="Calculadora da Área do Trapézio">Área do Trapézio</a><i></i></li>
+
+
+                    <li class="heading">Extras</li>
+                    <li role="menuitem" class=""><a href="../outros/validar_cpf.php" title="Validar CPF">Validar CPF</a><i></i></li>
                 </ul>
             </div>

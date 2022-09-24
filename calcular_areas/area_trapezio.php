@@ -1,4 +1,4 @@
-<?php include("view/header.php"); ?>
+<?php include("../view/header.php"); ?>
 
 <div class="medium-9 columns" id="wrapper-content">
 
