@@ -19,7 +19,7 @@
 <body>
     <header>
         <div class="header-wrapper row">
-            <a href="index.php" class="logo" id="logo"><img src="https://cdn.4devs.com.br/imagens/logo_4devs.png" alt="Ferramentas" title="Voltar para página inicial"></a>
+            <a href="../index.php" class="logo" id="logo"><img src="https://cdn.4devs.com.br/imagens/logo_4devs.png" alt="Ferramentas" title="Voltar para página inicial"></a>
 
             <!-- <ul class="header-nav">
                 <li class=""><a href="/computacao" title="Computação">Computação</a></li>
