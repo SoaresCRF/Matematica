@@ -12,14 +12,18 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=1" />
     <meta name="description" content="Confira várias calculadoras de matemática, Porcentagem, MMC, MDC, Áreas de figuras planas, fatoração, regra de 3 entre várias outras." />
+    <link rel="apple-touch-icon" sizes="180x180" href="../img/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/icons/favicon-16x16.png">
+    <link rel="manifest" href="../img/icons/site.webmanifest">
 
     <link rel="stylesheet" href="https://cdn.4devs.com.br/css/frontoffice.077.css">
 </head>
 
 <body>
-    <header>
+    <header style="background-color: #4F5D73;">
         <div class="header-wrapper row">
-            <a href="../index.php" class="logo" id="logo"><img src="https://cdn.4devs.com.br/imagens/logo_4devs.png" alt="Ferramentas" title="Voltar para página inicial"></a>
+            <a href="../index.php" class="logo" id="logo"><img src="../img/icons/favicon.ico" alt="Ferramentas" title="Voltar para página inicial"> <span style="font-size: 22px;">MathDEV</span></a>
 
             <!-- <ul class="header-nav">
                 <li class=""><a href="/computacao" title="Computação">Computação</a></li>

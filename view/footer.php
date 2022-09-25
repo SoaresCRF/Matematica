@@ -1,7 +1,7 @@
 </div>
 </main>
 
-<footer>
+<footer style="background-color: #4F5D73;">
     <div class="row">
         <div class="medium-9 columns about">
             <p>Matemática . 2022 - 2022 . "Facilitando a vida de quem odeia matemática"<br></p>
