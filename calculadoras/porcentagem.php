@@ -143,15 +143,20 @@ include("../funcoes/calculos_porcetagens.php");
                                 <div class="feature-container">
                                     O valor
                                     <label for="porc5_num1" class="visually-hidden">valor:</label>
-                                    <input placeholder="- -" type="number" id="porc5_num1" title="Digite aqui o número base da porcentagem, Quanto é" />
+                                    <input placeholder="- -" type="number" name="valor5" id="porc5_num1" title="Digite aqui o número base da porcentagem, Quanto é" />
                                     sobre o valor
                                     <label for="porc5_num2" class="visually-hidden">valor:</label>
-                                    <input placeholder="- -" type="number" id="porc5_num2" title="Digite aqui quantos % do número anterior você quer saber." />
+                                    <input placeholder="- -" type="number" name="valor55" id="porc5_num2" title="Digite aqui quantos % do número anterior você quer saber." />
                                     é quantos por cento?
                                 </div>
                                 <div class="actions-container">
                                     <button class="percentage-btn" name="calcular5" value="calcular5" data-calcbutton="5" id="bt_porcentagem5">Calcular</button>
-                                    <div id="res-porcentagem5" class="result-container">- - - -</div>
+                                    <div id="res-porcentagem1" class="result-container">
+                                        <?php
+                                        if (isset($_POST['valor5']) and isset($_POST['valor55']) and $_POST['valor5'] != "" and $_POST['valor55'] != "" and is_numeric($_POST['valor5']) and is_numeric($_POST['valor55'])) { ?>
+                                            <span style="color: #3C99C4; font-weight: bold; font-size: 18px;"> <?php calcular5(); ?></span>
+                                        <?php } ?>
+                                    </div>
                                 </div>
                                 <div class="errors-container"></div>
                             </div>
@@ -165,18 +170,23 @@ include("../funcoes/calculos_porcetagens.php");
                                 <div class="feature-container">
                                     Tenho um valor de
                                     <label for="porc6_num1" class="visually-hidden">valor:</label>
-                                    <input placeholder="- -" type="number" id="porc6_num1" title="Digite aqui o número base da porcentagem, Quanto é" />
+                                    <input placeholder="- -" type="number" name="valor" id="porc6_num1" title="Digite aqui o número base da porcentagem, Quanto é" />
                                     e quero <b>AUMENTAR</b>
                                     <div class="is-percentage">
                                         <label for="porc6_num2" class="visually-hidden">percentagem:</label>
-                                        <input placeholder="- -" type="number" id="porc6_num2" title="Digite aqui quantos % do número anterior você quer saber." />
+                                        <input placeholder="- -" type="number" name="porcentagem" id="porc6_num2" title="Digite aqui quantos % do número anterior você quer saber." />
                                         <span>%</span>
                                     </div>
                                     Qual é o resultado?
                                 </div>
                                 <div class="actions-container">
                                     <button class="percentage-btn" name="calcular6" value="calcular6" data-calcbutton="6" id="bt_porcentagem6">Calcular</button>
-                                    <div id="res-porcentagem6" class="result-container">- - - -</div>
+                                    <div id="res-porcentagem1" class="result-container">
+                                        <?php
+                                        if (isset($_POST['valor']) and isset($_POST['porcentagem']) and $_POST['valor'] != "" and $_POST['porcentagem'] != "" and is_numeric($_POST['valor']) and is_numeric($_POST['porcentagem'])) { ?>
+                                            <span style="color: #3C99C4; font-weight: bold; font-size: 18px;"> <?php calcular6(); ?></span>
+                                        <?php } ?>
+                                    </div>
                                 </div>
                                 <div class="errors-container"></div>
                             </div>
@@ -189,26 +199,31 @@ include("../funcoes/calculos_porcetagens.php");
                                 <div class="feature-container">
                                     Tenho um valor de
                                     <label for="porc7_num1" class="visually-hidden">valor:</label>
-                                    <input placeholder="- -" type="number" id="porc7_num1" title="Digite aqui o número base da porcentagem, Quanto é" />
+                                    <input placeholder="- -" name="valor7" type="number" id="porc7_num1" title="Digite aqui o número base da porcentagem, Quanto é" />
                                     e quero <b>DIMINUIR</b>
                                     <div class="is-percentage">
                                         <label for="porc7_num2" class="visually-hidden">percentagem:</label>
-                                        <input placeholder="- -" type="number" id="porc7_num2" title="Digite aqui quantos % do número anterior você quer saber." />
+                                        <input placeholder="- -" type="number" name="porcentagem7" id="porc7_num2" title="Digite aqui quantos % do número anterior você quer saber." />
                                         <span>%</span>
                                     </div>
                                     Qual é o resultado?
                                 </div>
                                 <div class="actions-container">
                                     <button class="percentage-btn" name="calcular7" value="calcular7" data-calcbutton="7" id="bt_porcentagem7">Calcular</button>
-                                    <div id="res-porcentagem7" class="result-container">- - - -</div>
+                                    <div id="res-porcentagem1" class="result-container">
+                                        <?php
+                                        if (isset($_POST['valor7']) and isset($_POST['porcentagem7']) and $_POST['valor7'] != "" and $_POST['porcentagem7'] != "" and is_numeric($_POST['valor7']) and is_numeric($_POST['porcentagem7'])) { ?>
+                                            <span style="color: #3C99C4; font-weight: bold; font-size: 18px;"> <?php calcular7(); ?></span>
+                                        <?php } ?>
+                                    </div>
                                 </div>
                                 <div class="errors-container"></div>
                             </div>
                         </form>
 
-                        <div class="app-divider"></div>
+                        <!-- <div class="app-divider"></div> -->
 
-                        <form action="porcentagem.php" method="post">
+                        <!-- <form action="porcentagem.php" method="post">
                             <div class="row app-container" data-calcfeat="8">
                                 <div class="feature-container">
                                     Tenho um valor inicial que <b>AUMENTOU</b> em
@@ -228,11 +243,11 @@ include("../funcoes/calculos_porcetagens.php");
                                 </div>
                                 <div class="errors-container"></div>
                             </div>
-                        </form>
+                        </form> -->
 
-                        <div class="app-divider"></div>
+                        <!-- <div class="app-divider"></div> -->
 
-                        <form action="porcentagem.php" method="post">
+                        <!-- <form action="porcentagem.php" method="post">
                             <div class="row app-container" data-calcfeat="9">
                                 <div class="feature-container">
                                     Tenho um valor inicial que <b>DIMINUIU</b> em
@@ -252,10 +267,10 @@ include("../funcoes/calculos_porcetagens.php");
                                 </div>
                                 <div class="errors-container"></div>
                             </div>
-                        </form>
+                        </form> -->
                     </div>
                 </div>
-                <div class="copy-info">Clique para copiar</div>
+                <!-- <div class="copy-info">Clique para copiar</div> -->
             </div>
         </div>
     </div>

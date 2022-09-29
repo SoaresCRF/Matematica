@@ -56,6 +56,7 @@
                     <li class="heading">Calculadoras</li>
                     <li role="menuitem" class=""><a href="../calculadoras/equacao_segundo_grau.php" title="Calcular equação do segundo grau">Calcular equação do segundo grau</a><i></i></li>
                     <li role="menuitem" class=""><a href="../calculadoras/fatorar.php" title="Calculadora de Fatoração de Número">Fatorar Número</a><i></i></li>
+                    <li role="menuitem" class=""><a href="../calculadoras/porcentagem.php" title="Calculadora de porcentagem">Porcentagem</a><i></i></li>
 
 
                     <li class="heading">Calcular Áreas</li>
