@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=1" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/public/icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/public/icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/public/icon/favicon-16x16.png">
+    <link rel="manifest" href="/public/icon/site.webmanifest">
+    <title>Ferramentas Matemáticas - Área Retângulo</title>
+    <link rel="stylesheet" href="/public/css/style.css">
+    <link rel="preload" href="https://cdn.4devs.com.br/css/frontoffice.078.css" as="style"
+        onload="this.onload=null;this.rel='stylesheet'">
+</head>
+
+<body>
+    <header id="header"></header>
+
+    <main>
+        <div class="row">
+            <div id="listItens" class="medium-3 columns main-sidebar"></div>
+
+            <div class="medium-9 columns" id="wrapper-content">
+                <div class="row">
+                    <div class="small-12 columns">
+                        <!-- Conteúdo da página -->
+                        <div id="container_ferramenta">
+                            <h1>
+                                Calculadora Área do Retângulo
+                            </h1>
+
+                            <div class="row">
+                                <div class="medium-6 columns">
+                                    <label for="" style="font-weight: bold;">Base</label>
+                                    <input id="baseInput" type="number" class="left margem_porcentagem"
+                                        style="width: 8rem;" title="Digite aqui a base do retângulo" />
+                                </div>
+                                <div class="medium-6 columns">
+                                    <label for="" style="font-weight: bold;">Altura</label>
+                                    <input id="alturaInput" type="number" class="left margem_porcentagem"
+                                        style="width: 8rem;" title="Digite aqui a altura do retângulo" />
+                                </div>
+                            </div>
+
+                            <div id="area_resposta">Resposta:
+                                <div style="white-space: pre-line;" id="respostaAreaRetangulo"
+                                    class="div_texto_resposta"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer id="footer"></footer>
+
+    <script src="https://cdn.4devs.com.br/js/frontoffice.040.js"></script>
+
+    <!-- Carregando arquivos HTML -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+        integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous">
+        </script>
+
+    <script>
+        $(function () {
+            $("#header").load("/view/layouts/header.html");
+        });
+    </script>
+
+    <script>
+        $(function () {
+            $("#listItens").load("/view/layouts/listItens.html");
+        });
+    </script>
+
+    <script>
+        $(function () {
+            $("#footer").load("/view/layouts/footer.html");
+        });
+    </script>
+    <!-- Final -->
+
+    <script>
+        baseInput.addEventListener("input", function () {
+
+            respostaAreaRetangulo.textContent = "A = B * H\r\n" +
+                "A = " + baseInput.value + " * " + alturaInput.value + "\r\n" +
+                "A = " + parseFloat(baseInput.value) * parseFloat(alturaInput.value);
+        });
+
+        alturaInput.addEventListener("input", function () {
+
+            respostaAreaRetangulo.textContent = "A = B * H\r\n" +
+                "A = " + baseInput.value + " * " + alturaInput.value + "\r\n" +
+                "A = " + parseFloat(baseInput.value) * parseFloat(alturaInput.value);
+        });
+    </script>
+
+</body>
+
+</html>
